@@ -1,26 +1,30 @@
+import Model.Book;
 import Model.Product;
 
 import java.util.Scanner;
 
 class Main{
     public static void main(String[] args) {
-        System.out.println("EX01 de POO");
+        System.out.println("EX02 de POO");
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Digite nome do produto: ");
-        String nome = input.nextLine();
+        System.out.println("Digite o Título do livro: ");
+        String titulo = input.nextLine();
 
-        System.out.println("Digite o preço do produto: ");
-        double preco = Double.parseDouble(input.nextLine());
+        System.out.println("Digite o Autor do livro: ");
+        String autor = input.nextLine();
 
-        System.out.println("Digite a quantidade de produto: ");
-        int quantidade = Integer.parseInt(input.nextLine());
+        System.out.println("Quantos capítulos tem o Livro: ");
+        int capitulos = Integer.parseInt(input.nextLine());
 
-        Product product = new Product(nome,preco,quantidade);
+        Book livro = new Book(titulo,autor,capitulos);
 
-        System.out.println("Produto: " + product.getNome());
-        System.out.println("Preço: R$" + product.getPreco());
-        System.out.println("Quantidade em estoque: " + product.getQuantidade());
+        System.out.printf("\"%s\" de %s com %d páginas",
+                livro.getTitle(),
+                livro.getAuthor(),
+                livro.getChapter()
+        );
+
 
         input.close();
     }
