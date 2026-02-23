@@ -6,7 +6,7 @@ class Main{
     public static void main(String[] args) {
         System.out.println("EX06 de POO");
         Scanner input = new Scanner(System.in);
-
+        //teste
         Developer dev = new Developer("Gabriel Inácio","Dev Trainee",1);
 
         System.out.println("---  Antes da Atualização  ---");
