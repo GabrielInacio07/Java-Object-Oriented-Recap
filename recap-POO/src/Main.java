@@ -9,6 +9,7 @@ class Main{
         Scanner input = new Scanner(System.in);
         ArrayList<Task> listaTask = new ArrayList<>();
 
+        //teste
         listaTask.add(new Task("Estudar Alura", true));
         listaTask.add(new Task("Estudar Java", true));
         listaTask.add(new Task("Fazer Exercícios", false));
