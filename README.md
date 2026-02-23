@@ -19,15 +19,6 @@ Este módulo contém exercícios e exemplos que reforçam os seguintes conceitos
 Estes conceitos são revisitados com exemplos simples executáveis no método `main()` para reforçar seu uso no Java.
 
 ---
-
-## 📂 Estrutura do projeto
-/recap-POO
-├── src/
-│ └── Main.java # Exercícios de recapitulação de POO
-├── .gitignore
-└── README.md
-
-
 *(A estrutura pode variar conforme a organização do projeto. Ajuste conforme necessário.)*
 
 ---
