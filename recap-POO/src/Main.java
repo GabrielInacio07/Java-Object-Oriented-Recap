@@ -1,22 +1,23 @@
 import Model.*;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 class Main{
     public static void main(String[] args) {
-        System.out.println("EX06 de POO");
+        System.out.println("EX08 de POO");
         Scanner input = new Scanner(System.in);
-        //teste
-        Developer dev = new Developer("Gabriel Inácio","Dev Trainee",1);
+        ArrayList<Task> listaTask = new ArrayList<>();
 
-        System.out.println("---  Antes da Atualização  ---");
-        dev.showDetails();
+        listaTask.add(new Task("Estudar Alura", true));
+        listaTask.add(new Task("Estudar Java", true));
+        listaTask.add(new Task("Fazer Exercícios", false));
 
-        dev.setCargo("Dev Junior");
-        dev.setNivel(2);
 
-        System.out.println("\n---  Após da Atualização  ---");
-        dev.showDetails();
+        System.out.println("📋 Listando tarefas:");
+        for(Task tarefas : listaTask){
+            System.out.println(tarefas.toString());
+        }
 
         input.close();
     }
